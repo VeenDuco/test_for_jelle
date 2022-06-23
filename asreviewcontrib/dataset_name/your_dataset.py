@@ -1,29 +1,29 @@
 from asreview.datasets import BaseDataSet
 from asreview.datasets import BaseDataGroup
+from pathlib import Path
 
-class YourDataGroup(BaseDataGroup):
-    group_id = "your_data_group"
-    description = "A new data group with my awesome datasets."
+
+class example_dataset_local(BaseDataSet):
+    """
+    This is an example dataset that is stored locally.
+    """
+
+    import os
+    __filepath__ = os.getcwd()
 
     def __init__(self):
-
-        dataset = BaseDataSet.from_config({
-            "dataset_id": "your_data_id",
-            "url": "",
-            "reference": "",
-            "link": "",
-            "license": "",
-            "title": "Your Data",
-            "authors": [
-            "Jane Doe",
-            "John Doe"
-            ],
-            "year": 2021,
-            "topic": "Your topic",
-            "final_inclusions": True,
-            "title_abstract_inclusions": False
-        }
+        super().__init__(
+            dataset_id="test_voor_jelle",
+            filepath=str(Path(self.__filepath__, 'data', 'your_dataset.csv')),
+            title="Dataset template test voor jelle",
+            description="This is an example dataset that is stored locally.",
+            authors="Veen, D.",
+            topic="A test case",
+            link=None,
+            reference=None,
+            img_url=None,
+            license=None,
+            year="2023"
         )
 
-        super(YourDataGroup, self).__init__(dataset)
-        # pass multiple datasets to init if there are more datasets
+
