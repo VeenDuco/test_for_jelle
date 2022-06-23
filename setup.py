@@ -2,12 +2,12 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='asreview-template-dataset-extension',
+    name='test_for_jelle',
     version='0.1',
-    description='Example dataset extension',
-    url='https://github.com/asreview/template-extension-new-dataset',
-    author='ASReview team',
-    author_email='asreview@uu.nl',
+    description='Test Dataset Extension for Jelle',
+    url='https://github.com/VeenDuco/test_for_jelle',
+    author='Veen, D.',
+    author_email='d.veen@uu.nl',
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
