@@ -26,8 +26,7 @@ setup(
         "asreview.datasets": [
             "example_dataset_local = asreviewcontrib.dataset_name.your_dataset:example_dataset_local", # noqa
             "example_dataset_remote = asreviewcontrib.dataset_name.your_dataset:example_dataset_remote", # noqa
-            "example_dataset_group = asreviewcontrib.dataset_name.your_dataset:example_dataset_group", # noqa
-            "example_dataset_group_2 = asreviewcontrib.dataset_name.your_dataset:example_dataset_group_2" # noqa
+            "example_dataset_group = asreviewcontrib.dataset_name.your_dataset:example_dataset_group" # noqa
         ]
 
     },
