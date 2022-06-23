@@ -26,4 +26,13 @@ class example_dataset_local(BaseDataSet):
             year="2023"
         )
 
+class example_dataset_group(BaseDataGroup):
+    """
+    This is an example dataset group.
+    """
 
+    group_id = "example_dataset_group"
+    description = "Example dataset group"
+
+    def __init__(self):
+        super().__init__(example_dataset_local(), example_dataset_remote())
