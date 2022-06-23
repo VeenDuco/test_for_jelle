@@ -26,6 +26,28 @@ class example_dataset_local(BaseDataSet):
             year="2023"
         )
 
+
+class example_dataset_remote(BaseDataSet):
+    """
+    This is an example dataset that is stored remotely.
+    """
+
+    def __init__(self):
+        super().__init__(
+            dataset_id="example_dataset_remote",
+            filepath='https://raw.githubusercontent.com/asreview/systematic-review-datasets/master/datasets/van_de_Schoot_2017/output/van_de_Schoot_2017.csv',  # noqa
+            title="Example dataset (remote)",
+            description="This is an example dataset that is stored remotely.",
+            authors='van de Schoot, J. (2017)',
+            topic=None,
+            link=None,
+            reference=None,
+            img_url=None,
+            license=None,
+            year=None
+        )
+
+
 class example_dataset_group(BaseDataGroup):
     """
     This is an example dataset group.
